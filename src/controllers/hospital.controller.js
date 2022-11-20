@@ -20,7 +20,7 @@ module.exports = {
             console.log('ejecutando Info paciente ' + req.params.idPaciente)
 
             res.json({
-                message: "Paciente " + req.params.idPaciente
+                message: "Informacion del Paciente " + req.params.idPaciente
             })
 
         } catch (err) {
@@ -29,20 +29,6 @@ module.exports = {
     },
 
     crear: async (req, res) => {
-    },
-
-    prueba: async (req, res) => {
-        try {
-            console.log('ejecutando prueba')
-
-            res.json({
-                message: "Hola mundo"
-            })
-
-        } catch (err) {
-            console.log(err)
-        }
-
     }
 
 }
